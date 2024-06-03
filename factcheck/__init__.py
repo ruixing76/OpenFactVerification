@@ -34,6 +34,7 @@ class FactCheck:
         api_config: dict = None,
         num_seed_retries: int = 3,
     ):
+        # TODO: better handle raw token count
         self.encoding = tiktoken.get_encoding("cl100k_base")
 
         self.prompt = prompt_mapper(prompt_name=prompt)
